@@ -1,0 +1,413 @@
+/* Grid */
+.container
+{
+    display: grid;
+    grid-template-columns: 24em 24em 24em;
+    grid-template-rows: 8em 26em 11em 46em 46em 30em;
+}
+
+.container div
+{
+ /* border: 0.1em solid black;*/
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+body
+{
+    background-image: url(../images/wavy.jpg);
+
+}
+/* First section for header and nav items */
+.header
+{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    font-family: 'League Spartan', sans-serif;
+}
+
+nav
+{
+    display: flex;
+}
+
+nav ul
+{
+    display: flex;
+    gap: 3em;
+}
+
+#bar
+{
+    display: inline-block;
+    padding: 3em;
+    font-size: 1.2em;
+}
+
+#name
+{
+    /*font-size: 0.5em;*/
+    display: flex;
+    font-weight: bold;
+    color: #3d535f;
+    cursor: pointer;
+    text-transform: uppercase;
+
+
+}
+/* Second section for image and login*/
+.intro
+{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    text-align: center;
+    margin-top: 2em;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 2em;  
+}
+
+/*.login 
+{
+    font-family: 'League Spartan', sans-serif;
+    background-color: #3d535f; 
+    display: inline-block;
+    border: none;
+    margin-top: 3em;
+    padding: 0.2em 0.15em;
+    text-decoration: none;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 0.3em;
+    color: white;
+    text-align: center;
+
+  }*/
+  #homepage-login
+  {
+    color: #3d535f;
+  }
+  .login-form
+{
+    width: 20em;
+    height: 30em;
+    border: 0.1em solid black;
+    margin-left: 30em;
+    margin-top: 7em;
+}
+
+form
+{
+  
+}
+
+::placeholder
+{
+    font-family: 'League Spartan', sans-serif;
+}
+#submit-btn
+{
+    font-family: 'League Spartan', sans-serif;
+    background-color: #3d535f;
+    margin-top: 1em;
+    padding: 0.5em 0.7em;
+    text-decoration: none;
+    font-size: 0.7em;
+    cursor: pointer;
+    text-align: center;
+    
+    border-radius: 0.3em;
+    color: white;
+}
+input[type="email"]
+{
+    padding: 1em;
+}
+input[type="password"]
+{
+    padding: 1em;
+}
+  
+/* Third section for social media links*/
+.socials
+{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    text-decoration: none;
+}
+
+.socials ul
+{
+    display: flex;
+    gap: 3em;
+    margin-left: 35em;
+    
+}
+
+.icon
+{
+    width: 4em;
+    height: 4em;
+    display: inline-block;
+    padding: 3em;
+    text-decoration: none;
+    
+}
+/*the about and experience section*/
+.subcontainer
+{
+    display: grid;
+    grid-template-columns: 47.5em 47.5em;
+    grid-template-rows: 25em 20em;
+}
+.titles
+{
+    font-family: 'League Spartan', sans-serif;
+    font-weight: bold;
+    color: #3d535f;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 1em;
+    
+}
+#occupation
+{
+    font-style: italic;
+}
+.aboutAndExperience
+{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    font-family: 'League Spartan', sans-serif;
+}
+.about
+{
+    text-align: center;
+    font-size: 1em;
+}
+.image img
+{
+    margin-left: 15em;
+    height: 20em;
+    width: 15em;
+}
+.image figcaption
+{
+    text-align: center;
+}
+
+.exp 
+{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    display: inline-block;
+    font-family: 'League Spartan', sans-serif;
+    text-align: center;
+}
+
+
+/*the skills and education section*/
+.skillsAndEdu
+{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    font-family: 'League Spartan', sans-serif;
+}
+.subcontainer2
+{
+    display:grid;
+    
+    grid-template-rows: 22em 22em;
+}
+.skills
+{
+    list-style: none;
+    text-align: center;
+}
+
+.education
+{
+    display: grid;
+    grid-template-columns: 30em 30em 30em;
+    gap: 3em;
+}
+.education ul
+{
+    list-style: none;
+    text-align: center;
+}
+.l1
+{
+    margin-top: 3.8em;
+    
+}
+.l2
+{
+    
+}
+.l3
+{
+    margin-top: 3.8em;
+    
+}
+/*the projects section*/
+
+.projects
+{
+    
+    display: grid;
+    grid-template-columns: 30em 30em 30em;
+    grid-template-rows: 40em;
+    gap: 3em;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.projects img
+{
+    width: 27em;
+    height: 25em;
+}
+
+/*the blog section*/
+
+
+.blog-form
+{
+    display: flex;
+    width: 20em;
+    height: 30em;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7em;
+}
+input[type="text"]
+{
+    padding: 1em;
+}
+.mainForm
+{
+    margin-left: 3em;
+}
+#submit-btn2
+{
+    font-family: 'League Spartan', sans-serif;
+    background-color: #3d535f;
+    margin-top: 1em;
+    padding: 0.5em 0.7em;
+    text-decoration: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-align: center;
+    margin-right: 2em;
+    border-radius: 0.3em;
+    color: white;
+    width: 10em;
+}
+
+#clear-btn2
+{
+    font-family: 'League Spartan', sans-serif;
+    background-color: #3d535f;
+    margin-top: 1em;
+    padding: 0.5em 0.7em;
+    text-decoration: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 0.3em;
+    color: white;
+    width: 10em;
+}
+
+input[name="contents"]
+{
+    height: 9em;   
+}
+/*footer*/
+footer
+{
+   margin-left: 4em;
+   font-family: 'League Spartan', sans-serif;
+   font-size: 1em;
+}
+/*.last
+{
+    font-family: 'League Spartan', sans-serif;
+    display: grid;
+    grid-template-columns: 20em;
+    grid-template-rows: 10em;
+    margin-bottom: 10em;
+}*/
+.footer ul
+{
+    margin-left: 35em;
+    list-style: none;
+}
+h2
+{
+    margin-left: 20em;
+}
+/* View blog*/
+.box
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1em;
+    display: inline-block;
+    
+}
+.b-title
+{
+    
+    font-family: 'League Spartan', sans-serif;
+    text-align: center;
+    margin-left: 5em;
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+    text-align: center
+}
+
+
+.b-content
+{
+    font-family: 'League Spartan', sans-serif;
+    text-align: center;
+    margin-left: 5em;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+#lout
+{
+    font-family: 'League Spartan', sans-serif;
+    background-color: #3d535f;
+    margin-top: 1em;
+    padding: 0.5em 0.9em;
+    text-decoration: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 2em;
+    border-radius: 0.3em;
+    color: white;
+    width: 10em;
+    
+}
+
+    
+
+
+
+
+
+
+
